@@ -3,7 +3,7 @@
 sudo apt-add-repository ppa:ansible/ansible -y
 sleep 10
 
-sudo apt-get update -qq && sudo apt-get dist-upgrade -qq && echo "All up to date now!" && notify-send "All up to date now!"
+#sudo apt-get update -qq && sudo apt-get dist-upgrade -qq && echo "All up to date now!" && notify-send "All up to date now!"
 
 
 sleep 10 
