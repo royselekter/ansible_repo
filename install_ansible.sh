@@ -6,7 +6,7 @@ sleep 10
 sudo apt-get update -y
 sleep 10 
 
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libpq-dev
+echo 'libssl1.0.0:amd64 libssl1.0.0/restart-services string' | sudo debconf-set-selections
 
 sudo apt-get install ansible -y
 
