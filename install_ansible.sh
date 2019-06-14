@@ -6,13 +6,8 @@ sleep 10
 sudo apt-get update -y
 sleep 10 
 
-sudo apt-get -y install debconf-utils
+echo 'libc6 libraries/restart-without-asking boolean true' | sudo debconf-set-select
 
-sudo echo 'libssl1.0.0:amd64 libssl1.0.0/restart-services string' | sudo debconf-set-selections
-
-apt-get install libpq-dev,
-
-sudo debconf-get-selections | grep libssl1.0.0:amd64
 
 sudo apt-get install ansible -y
 
