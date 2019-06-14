@@ -10,6 +10,8 @@ sudo apt-get -y install debconf-utils
 
 sudo echo 'libssl1.0.0:amd64 libssl1.0.0/restart-services string' | sudo debconf-set-selections
 
+apt-get install libpq-dev,
+
 sudo debconf-get-selections | grep libssl1.0.0:amd64
 
 sudo apt-get install ansible -y
