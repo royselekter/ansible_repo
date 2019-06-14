@@ -3,11 +3,10 @@
 sudo apt-add-repository ppa:ansible/ansible -y
 sleep 10
 
-sudo apt-get update -y
+sudo apt-get update -qq && sudo apt-get dist-upgrade -qq && echo "All up to date now!" && notify-send "All up to date now!"
+
+
 sleep 10 
-
-echo 'libc6 libraries/restart-without-asking boolean true' | sudo debconf-set-select
-
 
 sudo apt-get install ansible -y
 
