@@ -6,7 +6,11 @@ sleep 10
 sudo apt-get update -y
 sleep 10 
 
-echo 'libssl1.0.0:amd64 libssl1.0.0/restart-services string' | sudo debconf-set-selections
+sudo apt-get -y install debconf-utils
+
+sudo echo 'libssl1.0.0:amd64 libssl1.0.0/restart-services string' | sudo debconf-set-selections
+
+sudo debconf-get-selections | grep libssl1.0.0:amd64
 
 sudo apt-get install ansible -y
 
