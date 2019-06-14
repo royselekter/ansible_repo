@@ -6,6 +6,8 @@ sleep 10
 sudo apt-get update -y
 sleep 10 
 
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libpq-dev
+
 sudo apt-get install ansible -y
 
 sleep 60
