@@ -5,10 +5,13 @@ sleep 10
 
 #sudo apt-get update -qq && sudo apt-get dist-upgrade -qq && echo "All up to date now!" && notify-send "All up to date now!"
 
+sudo apt update -y
 
 sleep 10 
 
-sudo apt-get install ansible -y
+sudo apt install ansible -y
+
+
 
 sleep 60
 
