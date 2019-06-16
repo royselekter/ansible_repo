@@ -14,7 +14,7 @@ apt-get update
 apt-get --yes --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
 apt-get --yes --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
 
-sudo apt-get install ansible -y && apt-get upgrade -y
+sudo apt-get -y install ansible 
 
 
 
