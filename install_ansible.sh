@@ -10,11 +10,12 @@ sleep 10
 
 sleep 10 
 
-apt-get update
-apt-get --yes --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
-apt-get --yes --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
 
-sudo apt-get -y install ansible 
+apt-get install -y --no_install_recommends -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' ansible
+
+
+
+#sudo apt-get -y install ansible 
 
 
 
