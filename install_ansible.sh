@@ -5,11 +5,17 @@ sleep 10
 
 #sudo apt-get update -qq && sudo apt-get dist-upgrade -qq && echo "All up to date now!" && notify-send "All up to date now!"
 
-sudo apt update -y
+
+#apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
 
 sleep 10 
 
-sudo apt install ansible -y
+apt-get update
+apt-get --yes --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
+apt-get --yes --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
+
+sudo apt-get install ansible -y && apt-get upgrade -y
+
 
 
 
