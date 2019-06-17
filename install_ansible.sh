@@ -2,7 +2,13 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
-sudo apt-get update -y
+yes | sudo apt-get upgrade
+
+sleep 5 
+
+sudo apt-get update 
+
+sleep 10
 
 sudo apt-add-repository ppa:ansible/ansible -y
 
@@ -15,7 +21,7 @@ sleep 10
 
 sudo apt-get install ansible -y 
 
-sleep 60
+sleep 25
 
 sudo sed -i 's/#   StrictHostKeyChecking ask/StrictHostKeyChecking no/g' /etc/ssh/ssh_config
 sudo chown ubuntu /etc/ssh/ssh_config
