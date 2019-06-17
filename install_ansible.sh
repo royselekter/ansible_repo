@@ -2,6 +2,8 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
+yes | sudo apt-get upgrade
+
 sudo apt-add-repository ppa:ansible/ansible -y
 
 sleep 10
