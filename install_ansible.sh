@@ -1,24 +1,17 @@
 #! /bin/bash
 
-sudo apt-add-repository ppa:ansible/ansible -y
-sleep 10
+export DEBIAN_FRONTEND=noninteractive
 
-#sudo apt-get update -qq && sudo apt-get dist-upgrade -qq && echo "All up to date now!" && notify-send "All up to date now!"
+sudo apt-add-repository ppa:ansible/ansible -y
+
+sleep 10
 
 
 #apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
 
 sleep 10 
 
-
-apt-get install -y --no_install_recommends -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' ansible
-
-
-
-#sudo apt-get -y install ansible 
-
-
-
+sudo apt-get install ansible -y 
 
 sleep 60
 
