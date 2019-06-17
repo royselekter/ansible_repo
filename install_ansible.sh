@@ -1,6 +1,8 @@
 #! /bin/bash
 
-export DEBIAN_FRONTEND=noninteractive
+sudo export DEBIAN_FRONTEND=noninteractive
+
+# DEBIAN_FRONTEND=noninteractive
 
 yes | sudo apt-get upgrade
 
