@@ -19,7 +19,7 @@ sudo sed -i 's/#   StrictHostKeyChecking ask/StrictHostKeyChecking no/g' /etc/ss
 sudo chown ubuntu /etc/ssh/ssh_config
 sudo echo "UserKnownHostsFile=/dev/null" >> /etc/ssh/ssh_config
 
-sudo service ssh restart
+# sudo service ssh restart -y
 
 sleep 30
 
