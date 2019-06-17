@@ -2,7 +2,7 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
-yes | sudo apt-get upgrade
+sudo apt-get update -y
 
 sudo apt-add-repository ppa:ansible/ansible -y
 
