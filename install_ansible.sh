@@ -6,10 +6,6 @@ sleep 5
 
 sudo apt-get update 
 
-sleep 5
-
-apt-get -f install
-
 sleep 10
 
 sudo apt-add-repository ppa:ansible/ansible -y
