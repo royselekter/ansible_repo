@@ -4,6 +4,8 @@ export DEBIAN_FRONTEND=noninteractive
 
 # DEBIAN_FRONTEND=noninteractive
 
+apt-get install -q -y -o Dpkg::Options::="--force-confnew" postfix
+
 sleep 5 
 
 sudo apt-get update 
