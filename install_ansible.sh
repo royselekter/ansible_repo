@@ -21,9 +21,9 @@ sleep 10
 
 sleep 10 
 
+export DEBIAN_FRONTEND=noninteractive
 sudo apt-get install ansible -y 
 
-sudo dpkg --reconfigure -a
 
 sleep 25
 
