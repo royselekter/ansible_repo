@@ -1,6 +1,6 @@
 #! /bin/bash
 
-sudo export DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND=noninteractive
 
 # DEBIAN_FRONTEND=noninteractive
 
