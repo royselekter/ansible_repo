@@ -10,6 +10,8 @@ sleep 5
 
 sudo apt-get update 
 
+apt-get -f install
+
 sleep 10
 
 sudo apt-add-repository ppa:ansible/ansible -y
@@ -22,6 +24,9 @@ sleep 10
 sleep 10 
 
 export DEBIAN_FRONTEND=noninteractive
+
+
+
 sudo apt-get install ansible -y 
 
 
