@@ -2,13 +2,11 @@
 
 export DEBIAN_FRONTEND="noninteractive"
 
-# DEBIAN_FRONTEND=noninteractive
-
-apt-get install -q -y -o Dpkg::Options::="--force-confnew" postfix
-
 sleep 5 
 
 sudo apt-get update 
+
+sleep 5
 
 apt-get -f install
 
@@ -17,14 +15,6 @@ sleep 10
 sudo apt-add-repository ppa:ansible/ansible -y
 
 sleep 10
-
-
-#apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
-
-sleep 10 
-
-export DEBIAN_FRONTEND=noninteractive
-
 
 
 sudo apt-get install ansible -y 
@@ -48,7 +38,7 @@ sleep 5
 
 sudo chown -R ubuntu /home/ubuntu/.ansible
 
-chmod 777 /home/ubuntu/ansible_repo/ymlo.sh
+
 
 
 
