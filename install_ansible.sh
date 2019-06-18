@@ -2,6 +2,8 @@
 
 export DEBIAN_FRONTEND="noninteractive"
 
+echo "libssl1.1:amd64 libssl1.1/restart-services string" | debconf-set-selections
+
 sleep 5 
 
 sudo apt-get update 
