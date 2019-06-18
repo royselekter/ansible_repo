@@ -1,22 +1,14 @@
 #! /bin/bash
 
-export DEBIAN_FRONTEND="noninteractive"
-
-echo "libssl1.1:amd64 libssl1.1/restart-services string" | debconf-set-selections
-
-sleep 5 
-
 sudo apt-get update 
 
 sleep 10
 
-sudo apt-add-repository ppa:ansible/ansible -y
+sudo apt-add-repository -y ppa:ansible/ansible
 
-sleep 10
-
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ansible
 
 sudo apt-get install ansible -y 
-
 
 sleep 25
 
