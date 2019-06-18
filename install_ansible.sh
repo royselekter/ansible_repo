@@ -4,8 +4,6 @@ sudo export DEBIAN_FRONTEND=noninteractive
 
 # DEBIAN_FRONTEND=noninteractive
 
-yes | sudo apt-get upgrade
-
 sleep 5 
 
 sudo apt-get update 
@@ -22,6 +20,8 @@ sleep 10
 sleep 10 
 
 sudo apt-get install ansible -y 
+
+sudo dpkg --reconfigure -a
 
 sleep 25
 
