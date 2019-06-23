@@ -22,7 +22,7 @@ sleep 30
 
 ssh -o stricthostkeychecking=no ubuntu@192.168.10.51 'sudo echo "UserKnownHostsFile /dev/null" >> ~/.ssh/config'
 ssh -o stricthostkeychecking=no ubuntu@192.168.10.52 'sudo echo "UserKnownHostsFile /dev/null" >> ~/.ssh/config'
-ssh -o stricthostkeychecking=no ubuntu@192.168.15.40 'sudo echo "UserKnownHostsFile /dev/null" >> ~/.ssh/config'
+ssh -o stricthostkeychecking=no ubuntu@192.168.10.40 'sudo echo "UserKnownHostsFile /dev/null" >> ~/.ssh/config'
 
 sleep 5
 
